@@ -1,239 +1,854 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dapatkan ID OTT Navigator termurah di Malaysia! Streaming tanpa had dengan harga terbaik dan sokongan pelanggan 24/7.">
-    <meta name="keywords" content="ID OTT Navigator, streaming murah Malaysia, OTT Navigator termurah, kedai streaming online">
-    <meta name="author" content="Kedai ID OTT Navigator">
-    <title>Kedai ID OTT Navigator Termurah di Malaysia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Gaya tambahan untuk meningkatkan UI */
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1611162617210-7d673bf0fcrawl?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-        .animate-slide-up {
-            animation: slideUp 1s ease-out;
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .btn-hover:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        .form-input:focus {
-            outline: none;
-            border-color: #3B82F6;
-            box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
-        }
-        .package-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .package-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ✅ Google Search Console Verification -->
+  <meta name="google-site-verification" content="tAlOue1TbNspSDAu26Y7AZZQhJ7qwTNYkSqBS_CQIxs" />
+
+  <!-- ✅ SEO Meta Tags -->
+  <title>Necklenj - Handmade & Unik</title>
+  <meta name="description" content="Necklenj - Koleksi produk handmade unik dan bergaya dari Malaysia.">
+  <meta name="keywords" content="necklenj, ott navigator, ott tv, ott navigator lifetime, jual id ott navigator, jual id ott tv, id ott murah, malaysia">
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Open Graph (Paparan Cantik di WhatsApp/Facebook) -->
+  <meta property="og:title" content="Necklenj - Handmade & Unik">
+  <meta property="og:description" content="Koleksi produk handmade unik dan bergaya dari Malaysia.">
+  <meta property="og:image" content="https://mokm32.github.io/necklenj-site/images/logo.png">
+  <meta property="og:url" content="https://mokm32.github.io/necklenj-site/">
+  <meta property="og:type" content="website">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b1d3a;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0a2540;
+      border-bottom: 3px solid #00bfff;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #00bfff;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .hero {
+      background-color: #0e2a4d;
+      padding: 2rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      color: #00bfff;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .promo {
+      padding: 2rem 1rem;
+      background-color: #f39c12;
+      text-align: center;
+      color: #0b1d3a;
+      border-radius: 12px;
+      margin: 2rem auto;
+      max-width: 700px;
+    }
+
+    .promo h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .promo p {
+      font-size: 1.1rem;
+    }
+
+    #countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .channel-list {
+      padding: 2rem 1rem;
+      background-color: #14375d;
+      text-align: center;
+    }
+
+    .channel-list h2 {
+      color: #00bfff;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .channel-list ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .channel-list li {
+      background-color: #1b4e80;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .channel-list img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .package-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .package {
+      background-color: #14375d;
+      border: 1px solid #1b4e80;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+    }
+
+    .package h3 {
+      color: #00bfff;
+    }
+
+    .package p {
+      font-size: 0.95rem;
+    }
+
+    .package .button-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .package button {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .package button:hover {
+      background-color: #009acd;
+      transform: scale(1.05);
+    }
+
+    .package .buy-now {
+      background-color: #28a745;
+    }
+
+    .package .buy-now:hover {
+      background-color: #218838;
+    }
+
+    .cart-container {
+      background-color: #14375d;
+      padding: 2rem;
+      max-width: 700px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .cart-container h2 {
+      color: #00bfff;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .cart-container ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .cart-container li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #1b4e80;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      transition: transform 0.2s;
+    }
+
+    .cart-container li:hover {
+      transform: translateY(-2px);
+    }
+
+    .cart-container .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cart-container .quantity-controls button {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .cart-container .quantity-controls button:hover {
+      background-color: #009acd;
+    }
+
+    .cart-container .remove-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .cart-container .remove-btn:hover {
+      background-color: #cc0000;
+    }
+
+    .cart-total {
+      font-size: 1.4rem;
+      color: #00bfff;
+      margin-top: 1.5rem;
+      font-weight: bold;
+    }
+
+    .testimonials {
+      padding: 2rem 1rem;
+      background-color: #0e2a4d;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      color: #00bfff;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .testimonial-card {
+      background-color: #1b4e80;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimonial-card p {
+      font-size: 0.95rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .customer-name {
+      font-style: italic;
+      color: #00bfff;
+    }
+
+    .rating {
+      color: #ffd700;
+      font-size: 1.2rem;
+    }
+
+    .faq {
+      padding: 2rem 1rem;
+      background-color: #0e2a4d;
+      text-align: center;
+    }
+
+    .faq h2 {
+      color: #00bfff;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item {
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+
+    .faq-question {
+      width: 100%;
+      background-color: #1b4e80;
+      color: #ffffff;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      text-align: left;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+      background-color: #00bfff;
+    }
+
+    .faq-answer {
+      display: none;
+      background-color: #14375d;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+
+    .faq-answer.active {
+      display: block;
+    }
+
+    form {
+      padding: 2rem 1rem;
+      max-width: 400px;
+      margin: auto;
+      background-color: #0e2a4d;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    form h2 {
+      text-align: center;
+      color: #00bfff;
+      font-size: 1.8rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+      background-color: #1b4e80;
+      color: #ffffff;
+    }
+
+    form button {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    form button:hover {
+      background-color: #009acd;
+      transform: scale(1.02);
+    }
+
+    .payment-methods {
+      text-align: center;
+      background-color: #0e2a4d;
+      padding: 2rem 1rem;
+    }
+
+    .payment-methods h2 {
+      color: #00bfff;
+      font-size: 1.8rem;
+    }
+
+    .payment-methods p {
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    .payment-methods .bank-info {
+      font-size: 1.1rem;
+      color: #00bfff;
+      background-color: #14375d;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #0a2540;
+      border-top: 2px solid #00bfff;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #00bfff;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float img:hover {
+      transform: scale(1.1);
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      transition: opacity 0.3s;
+      z-index: 1000;
+    }
+
+    .scroll-top.show {
+      display: block;
+    }
+
+    .scroll-top:hover {
+      background-color: #009acd;
+    }
+
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 1000;
+    }
+
+    .notification.show {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .package-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      .package .button-container {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .cart-container li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .cart-container .quantity-controls {
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+  </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Bahagian Header -->
-    <header class="bg-blue-700 text-white py-4 sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Kedai ID OTT Navigator</h1>
-            <nav class="space-x-6">
-                <a href="#utama" class="hover:text-yellow-300 transition">Laman Utama</a>
-                <a href="#ciri" class="hover:text-yellow-300 transition">Ciri-ciri</a>
-                <a href="#pakej" class="hover:text-yellow-300 transition">Pakej</a>
-                <a href="#hubungi" class="hover:text-yellow-300 transition">Hubungi Kami</a>
-            </nav>
-        </div>
-    </header>
+<body>
+  <header>
+    <h1>NeckleNj</h1>
+    <p>Jual ID OTT Navigator + VOD Lifetime</p>
+  </header>
 
-    <!-- Bahagian Hero -->
-    <section id="utama" class="hero-bg text-white text-center">
-        <div class="container mx-auto px-4 animate-slide-up">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">ID OTT Navigator Termurah di Malaysia!</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Nikmati streaming tanpa had dengan harga paling berpatutan. Pilih pakej anda dan mulakan sekarang!</p>
-            <a href="#pakej" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full btn-hover transition duration-300">Lihat Pakej</a>
-        </div>
-    </section>
+  <section class="hero">
+    <h2>🎬 Selamat Datang ke website NeckleNj – Hiburan Tanpa Batasan!</h2>
+    <p>
+      ✅ Lifetime Access. Tanpa Bayaran Bulanan.<br>
+      ✅ Ribuan Saluran + VOD Lengkap. Terus di TV, Android & Peranti Anda.<br><br>
+      Bayangkan…<br>
+      📺 Menonton saluran premium dari seluruh dunia<br>
+      🎞 Akses ke filem terkini & siri popular<br>
+      ⚡️ Tanpa lag, tanpa sekatan, tanpa kos tersembunyi<br><br>
+      Hanya dengan satu ID playlist – dan ianya seumur hidup!<br><br>
+      🔥 Kenapa Pilih NeckleNj?<br>
+      ✅ Lifetime ID Playlist – Bayar sekali, nikmati selamanya<br>
+      ✅ Lengkap dengan VOD – Filem, drama, rancangan hiburan & banyak lagi<br>
+      ✅ Sokongan OTT Navigator – Aplikasi paling stabil & mesra pengguna<br>
+      ✅ Kualiti HD & 4K – Visual tajam, pengalaman menonton premium<br>
+      ✅ Aktif Segera – Tak perlu tunggu, kami setup untuk anda terus jalan!
+    </p>
+  </section>
 
-    <!-- Bahagian Ciri-ciri -->
-    <section id="ciri" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center mb-12">Mengapa Memilih Kami?</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition animate-slide-up">
-                    <img src="https://images.unsplash.com/photo-1593642532973-d31b97d0fad2?auto=format&fit=crop&w=300&q=80" alt="Harga Termurah" class="mx-auto mb-4 rounded-lg h-32 object-cover">
-                    <h4 class="text-xl font-semibold mb-2">Harga Terendah</h4>
-                    <p>ID OTT Navigator pada harga paling murah tanpa mengorbankan kualiti.</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition animate-slide-up" style="animation-delay: 0.2s;">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e756b6?auto=format&fit=crop&w=300&q=80" alt="Akses Pantas" class="mx-auto mb-4 rounded-lg h-32 object-cover">
-                    <h4 class="text-xl font-semibold mb-2">Penyediaan Segera</h4>
-                    <p>Dapatkan ID anda dalam masa beberapa minit selepas pembayaran.</p>
-                </div>
-                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition animate-slide-up" style="animation-delay: 0.4s;">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=300&q=80" alt="Sokongan Pelanggan" class="mx-auto mb-4 rounded-lg h-32 object-cover">
-                    <h4 class="text-xl font-semibold mb-2">Sokongan 24/7</h4>
-                    <p>Pasukan kami sentiasa sedia membantu melalui WhatsApp atau e-mel.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="promo">
+    <h2>Tawaran Terhad!</h2>
+    <p>Dapatkan <strong>10% diskaun</strong> untuk semua pakej jika anda membeli dalam masa 3 hari!</p>
+    <div id="countdown"></div>
+  </section>
 
-    <!-- Bahagian Pakej -->
-    <section id="pakej" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h3 class="text-3xl font-bold text-center mb-12">Pilih Pakej ID OTT Navigator Anda</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Pakej Pengguna -->
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up">
-                    <h4 class="text-xl font-semibold mb-2">Pakej 1 Peranti</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM8</p>
-                    <p class="mb-4">1 ID untuk 1 peranti sahaja</p>
-                    <button onclick="selectPackage('1 Peranti - RM8')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up" style="animation-delay: 0.1s;">
-                    <h4 class="text-xl font-semibold mb-2">Pakej 2 Peranti</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM16</p>
-                    <p class="mb-4">1 ID untuk 2 peranti sahaja</p>
-                    <button onclick="selectPackage('2 Peranti - RM16')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up" style="animation-delay: 0.2s;">
-                    <h4 class="text-xl font-semibold mb-2">Pakej 3 Peranti</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM24</p>
-                    <p class="mb-4">1 ID untuk 3 peranti sahaja</p>
-                    <button onclick="selectPackage('3 Peranti - RM24')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up" style="animation-delay: 0.3s;">
-                    <h4 class="text-xl font-semibold mb-2">Pakej 4 Peranti</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM32</p>
-                    <p class="mb-4">1 ID untuk 4 peranti sahaja</p>
-                    <button onclick="selectPackage('4 Peranti - RM32')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-            </div>
-            <!-- Pakej Ejen -->
-            <h3 class="text-3xl font-bold text-center mt-16 mb-12">Pakej Ejen</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up">
-                    <h4 class="text-xl font-semibold mb-2">Pakej Ejen A</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM150</p>
-                    <p class="mb-4">1 ID untuk 20 peranti sahaja</p>
-                    <button onclick="selectPackage('Ejen A (20 Peranti) - RM150')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up" style="animation-delay: 0.1s;">
-                    <h4 class="text-xl font-semibold mb-2">Pakej Ejen B</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM325</p>
-                    <p class="mb-4">1 ID untuk 50 peranti sahaja</p>
-                    <button onclick="selectPackage('Ejen B (50 Peranti) - RM325')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-                <div class="package-card bg-white p-6 rounded-xl shadow-lg text-center animate-slide-up" style="animation-delay: 0.2s;">
-                    <h4 class="text-xl font-semibold mb-2">Pakej Ejen C</h4>
-                    <p class="text-2xl font-bold text-blue-700 mb-4">RM600</p>
-                    <p class="mb-4">1 ID untuk 100 peranti sahaja</p>
-                    <button onclick="selectPackage('Ejen C (100 Peranti) - RM600')" class="bg-yellow-400 text-black font-bold py-2 px-6 rounded-full btn-hover transition duration-300">Pilih Pakej</button>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="channel-list">
+    <h2>📺 Senarai Saluran</h2>
+    <ul>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Sports"/> Sports</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Movie"/> Movie</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="3 Beradik"/> 3 Beradik</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Malaysia"/> Malaysia</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Chinese"/> Chinese</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="India"/> India</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Indonesia"/> Indonesia</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="News"/> News</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Documentary"/> Documentary</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Arab"/> Arab</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Brunei"/> Brunei</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Entertainment"/> Entertainment</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Fast Channel"/> Fast Channel</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Korean"/> Korean</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Singapore"/> Singapore</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Kids"/> Kids</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Radio"/> Radio</li>
+      <li><img src="https://i.ibb.co/mrNKFM6V/Untitled-design.png" alt="Pluto"/> Pluto</li>
+    </ul>
+  </section>
 
-    <!-- Bahagian Pesanan -->
-    <section id="pesan" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-8">Pesan ID OTT Navigator Anda Sekarang!</h3>
-            <p class="text-lg mb-8 max-w-xl mx-auto">Hanya beberapa langkah untuk menikmati streaming kegemaran anda tanpa had.</p>
-            <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg animate-slide-up">
-                <div class="mb-6">
-                    <label for="nama" class="block text-left font-semibold mb-2">Nama</label>
-                    <input type="text" id="nama" class="w-full p-3 border rounded-lg form-input" placeholder="Masukkan nama anda" required>
-                </div>
-                <div class="mb-6">
-                    <label for="telefon" class="block text-left font-semibold mb-2">Nombor Telefon</label>
-                    <input type="tel" id="telefon" class="w-full p-3 border rounded-lg form-input" placeholder="Masukkan nombor telefon anda" pattern="[0-9]{10,11}" required>
-                </div>
-                <div class="mb-6">
-                    <label for="pakej" class="block text-left font-semibold mb-2">Pilih Pakej</label>
-                    <select id="pakej" class="w-full p-3 border rounded-lg form-input" required>
-                        <option value="" disabled selected>Pilih pakej anda</option>
-                        <option value="1 Peranti - RM8">1 Peranti - RM8</option>
-                        <option value="2 Peranti - RM16">2 Peranti - RM16</option>
-                        <option value="3 Peranti - RM24">3 Peranti - RM24</option>
-                        <option value="4 Peranti - RM32">4 Peranti - RM32</option>
-                        <option value="Ejen A (20 Peranti) - RM150">Ejen A (20 Peranti) - RM150</option>
-                        <option value="Ejen B (50 Peranti) - RM325">Ejen B (50 Peranti) - RM325</option>
-                        <option value="Ejen C (100 Peranti) - RM600">Ejen C (100 Peranti) - RM600</option>
-                    </select>
-                </div>
-                <button type="submit" onclick="submitForm()" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-full btn-hover transition duration-300 w-full">Hantar Pesanan</button>
-            </div>
-        </div>
-    </section>
+  <section class="package-container">
+    <div class="package">
+      <h3>Pakej 1</h3>
+      <p>1 ID untuk 1 Peranti</p>
+      <p><strong>RM8.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej 1', 8.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej 1', 8.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej 2</h3>
+      <p>1 ID untuk 2 Peranti</p>
+      <p><strong>RM16.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej 2', 16.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej 2', 16.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej 3</h3>
+      <p>1 ID untuk 3 Peranti</p>
+      <p><strong>RM24.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej 3', 24.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej 3', 24.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej 4</h3>
+      <p>1 ID untuk 4 Peranti</p>
+      <p><strong>RM32.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej 4', 32.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej 4', 32.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej Agen A</h3>
+      <p>1 ID untuk 20 Peranti</p>
+      <p><strong>RM150.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej Agen A', 150.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej Agen A', 150.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej Agen B</h3>
+      <p>1 ID untuk 50 Peranti</p>
+      <p><strong>RM325.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej Agen B', 325.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej Agen B', 325.00)">Beli Sekarang</button>
+      </div>
+    </div>
+    <div class="package">
+      <h3>Pakej Agen C</h3>
+      <p>1 ID untuk 100 Peranti</p>
+      <p><strong>RM600.00</strong> Lifetime</p>
+      <div class="button-container">
+        <button onclick="addToCart('Pakej Agen C', 600.00)">Tambah ke Troli</button>
+        <button class="buy-now" onclick="buyNow('Pakej Agen C', 600.00)">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bahagian Hubungi Kami -->
-    <section id="hubungi" class="py-20 bg-blue-700 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-3xl font-bold mb-8">Hubungi Kami</h3>
-            <p class="text-lg mb-8 max-w-xl mx-auto">Ada soalan atau memerlukan bantuan? Kami hanya satu klik sahaja!</p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://wa.me/60123456789" class="bg-green-500 text-white font-bold py-3 px-6 rounded-full btn-hover transition duration-300">WhatsApp</a>
-                <a href="mailto:support@kedaiottnavigator.com" class="bg-gray-800 text-white font-bold py-3 px-6 rounded-full btn-hover transition duration-300">E-mel</a>
-            </div>
-        </div>
-    </section>
+  <section class="cart-container">
+    <h2>Troli Anda</h2>
+    <ul id="cart-items"></ul>
+    <p class="cart-total">Jumlah: RM<span id="cart-total">0.00</span></p>
+  </section>
 
-    <!-- Bahagian Footer -->
-    <footer class="bg-gray-900 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 Kedai ID OTT Navigator. Semua hak cipta terpelihara.</p>
-        </div>
-    </footer>
+  <form id="orderForm" onsubmit="submitOrder(event)">
+    <h2>Borang Tempahan</h2>
+    <input type="text" id="nama" placeholder="Nama Penuh" required>
+    <input type="text" id="telefon" placeholder="No Telefon" required>
+    <textarea id="pakej" readonly></textarea>
+    <button type="submit">Hantar ke WhatsApp</button>
+  </form>
 
-    <script>
-        // Skrip untuk animasi skrol lembut
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+  <section class="payment-methods">
+    <h2>Kaedah Pembayaran</h2>
+    <div class="bank-info">
+      <a href="https://i.ibb.co/0jtvDs9h/photo-2025-05-23-20-36-48.jpg" target="_blank">
+        <img src="https://i.ibb.co/0jtvDs9h/photo-2025-05-23-20-36-48.jpg" alt="Bukti Pembayaran" style="width: 200px; height: auto; margin-bottom: 10px; border-radius: 8px;">
+      </a>
+      <p><strong>Bank: Hong Leong Bank</strong></p>
+      <p><strong> - </strong></p>
+      <p>Sila buat pembayaran melalui <strong>QR Payment</strong> ke akaun di atas dan hantar bukti pembayaran kepada kami melalui WhatsApp.</p>
+    </div>
+  </section>
 
-        // Fungsi untuk memilih pakej secara automatik
-        function selectPackage(packageValue) {
-            const packageSelect = document.getElementById('pakej');
-            packageSelect.value = packageValue;
-            document.getElementById('pesan').scrollIntoView({ behavior: 'smooth' });
+  <section class="testimonials">
+    <h2>Ulasan Pelanggan</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p>"Saya sangat berpuas hati! Saluran HD dan VOD lengkap, tiada gangguan!"</p>
+        <p class="customer-name">– Ahmad R., Kuala Lumpur</p>
+        <p class="rating">★★★★★</p>
+      </div>
+      <div class="testimonial-card">
+        <p>"Pemasangan pantas dan harga berpatutan. Pasti akan cadangkan kepada rakan!"</p>
+        <p class="customer-name">– Siti N., Penang</p>
+        <p class="rating">★★★★☆</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Soalan Lazim (FAQ)</h2>
+    <div class="faq-item">
+      <button class="faq-question">Apakah OTT Navigator dan bagaimana ia berfungsi?</button>
+      <div class="faq-answer">
+        <p>OTT Navigator ialah aplikasi untuk menstrim saluran TV dan VOD. Selepas pembelian, anda akan menerima ID playlist untuk akses seumur hidup.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Adakah saya perlu membayar setiap bulan?</button>
+      <div class="faq-answer">
+        <p>Tidak, semua pakej adalah bayaran sekali sahaja untuk akses seumur hidup.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Bagaimana saya menerima ID selepas pembayaran?</button>
+      <div class="faq-answer">
+        <p>Selepas pembayaran disahkan, kami akan menghantar ID playlist melalui WhatsApp atau e-mel dalam masa 24 jam.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    📞 Hubungi: <a href="tel:+601136237443">011-3623 7443</a><br/>
+    📧 Email: <a href="mailto:mokm32888@gmail.com">mokm32888@gmail.com</a><br/>
+    💬 WhatsApp: <a href="https://wa.me/601136237443">Klik untuk WhatsApp</a>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/601136237443?text=Saya%20berminat%20dengan%20pakej%20NeckleNj.%20Boleh%20berikan%20maklumat%20lanjut?" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+  </div>
+
+  <button class="scroll-top" onclick="scrollToTop()">↑</button>
+
+  <div class="notification" id="notification"></div>
+
+  <script>
+    let cart = [];
+
+    function addToCart(name, price) {
+      const existingItem = cart.find(item => item.name === name);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+      updateCart();
+      showNotification('Pakej ditambah ke troli!');
+    }
+
+    function buyNow(name, price) {
+      cart = [{ name, price, quantity: 1 }];
+      updateCart();
+      showNotification('Pakej dipilih untuk pembelian!');
+      window.scrollTo({ top: document.getElementById('orderForm').offsetTop - 20, behavior: 'smooth' });
+    }
+
+    function changeQuantity(index, change) {
+      cart[index].quantity += change;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      updateCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+      showNotification('Pakej dibuang dari troli!');
+    }
+
+    function updateCart() {
+      const cartItems = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      const pakejField = document.getElementById('pakej');
+
+      cartItems.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <span>${item.name} - RM${item.price.toFixed(2)}</span>
+          <div class="quantity-controls">
+            <button onclick="changeQuantity(${index}, -1)">−</button>
+            <span>${item.quantity}</span>
+            <button onclick="changeQuantity(${index}, 1)">+</button>
+          </div>
+          <span>RM${itemTotal.toFixed(2)}</span>
+          <button class="remove-btn" onclick="removeFromCart(${index})">Buang</button>
+        `;
+        cartItems.appendChild(li);
+      });
+
+      cartTotal.textContent = total.toFixed(2);
+      pakejField.value = cart.map(item => `${item.name} x${item.quantity} - RM${(item.price * item.quantity).toFixed(2)}`).join('\n') + (cart.length > 0 ? `\nJumlah: RM${total.toFixed(2)}` : '');
+    }
+
+    function submitOrder(e) {
+      e.preventDefault();
+      const nama = document.getElementById('nama').value;
+      const telefon = document.getElementById('telefon').value;
+      const pakej = document.getElementById('pakej').value;
+      if (!pakej) {
+        alert('Sila tambah pakej ke troli sebelum membuat tempahan.');
+        return;
+      }
+      const msg = `Tempahan Baru:\nNama: ${nama}\nTelefon: ${telefon}\nPakej:\n${pakej}`;
+      const url = `https://wa.me/601136237443?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+      showNotification('Tempahan dihantar ke WhatsApp!');
+    }
+
+    function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.textContent = message;
+      notification.classList.add('show');
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 2000);
+    }
+
+    function startCountdown() {
+      const endDate = new Date('2025-08-31T23:59:59').getTime();
+      const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById('countdown').textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        if (distance < 0) {
+          clearInterval(countdown);
+          document.getElementById('countdown').textContent = 'Tawaran Tamat!';
         }
+      }, 1000);
+    }
+    startCountdown();
 
-        // Fungsi untuk mengendalikan penghantaran borang
-        function submitForm() {
-            const nama = document.getElementById('nama').value;
-            const telefon = document.getElementById('telefon').value;
-            const pakej = document.getElementById('pakej').value;
-            const phonePattern = /^[0-9]{10,11}$/;
-            if (nama && telefon && pakej && phonePattern.test(telefon)) {
-                alert('Terima kasih, ' + nama + '! Pesanan anda untuk pakej ' + pakej + ' telah dihantar. Kami akan menghubungi anda melalui nombor ' + telefon + ' secepat mungkin.');
-                document.getElementById('nama').value = '';
-                document.getElementById('telefon').value = '';
-                document.getElementById('pakej').value = '';
-            } else {
-                alert('Sila isi semua medan yang diperlukan dan pastikan nombor telefon mengandungi 10 atau 11 digit.');
-            }
-        }
-    </script>
+    window.addEventListener('scroll', () => {
+      const scrollTopBtn = document.querySelector('.scroll-top');
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('show');
+      } else {
+        scrollTopBtn.classList.remove('show');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>
